@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thermo Requirements</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Post Purchase Requirement</h2>
+    <form id="requirementForm">
+      <label for="category">Category</label>
+      <select name="category" id="category">
+        <option value="Capex">Capex</option>
+        <option value="Maintenance">Maintenance</option>
+        <option value="Spares">Spares</option>
+        <option value="General">General</option>
+      </select>
+
+      <div id="items-container"></div>
+
+      <button type="button" class="btn" onclick="addItem()">+ Add Item</button>
+      <button class="btn" type="submit">Post Requirement</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
